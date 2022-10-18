@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="specificity.css">
+    <title>Document</title>
+    <style>
+        div.container {
+            background: green;
+        }
+        body div {
+            background: red;
+        }
+        div.container#main {
+            background: purple;
+        }
+        body #main {
+            background: magenta;
+        }
+        .container {
+            background: blue;   
+        }
+        nav {
+            background: yellow;
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        li{
+            list-style: none;
+        }
+        body div.container#main {
+            background: brown;
+        }
+    </style>
+</head>
+<body>
+    <header for="commomRules">
+        <p>My name again</p>
+    </header>
+    <nav class="container" id="main">
+        <li>I AM A NAV!</li>
+    </nav>
+
+    <footer for="BoxModel">
+        <p>hey, I'm a box!</p>
+        <span>Can you notice the diffeence?</span>
+    </footer>
+</body>
+</html>
